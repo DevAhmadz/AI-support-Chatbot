@@ -5,22 +5,21 @@ A simple AI-powered chatbot that answers internal IT support and onboarding ques
 > “What’s the process for setting up 2FA in Microsoft 365?”
 
 Built using:
-- 🧠 OpenAI GPT-3.5
+- 🧠 Hugging Face Transformers (`DialoGPT-medium`)
 - 🖥️ Streamlit for the interface
-- 🔐 `.env`-based secret management
 - 💻 Developed in Gitpod, pushed via GitHub
 
 ---
 
 ## 🔧 Tech Stack
 
-| Tech       | Purpose                        |
-|------------|--------------------------------|
-| Python     | Main programming language      |
-| Streamlit  | Web app frontend               |
-| OpenAI API | Powering the chatbot logic     |
-| Gitpod     | Cloud dev environment          |
-| GitHub     | Version control + project repo |
+| Tech        | Purpose                           |
+|-------------|-----------------------------------|
+| Python      | Main programming language         |
+| Streamlit   | Web app frontend                  |
+| Hugging Face| Powering chatbot logic (no API)   |
+| Gitpod      | Cloud dev environment             |
+| GitHub      | Version control + project repo    |
 
 ---
 
@@ -30,5 +29,5 @@ Built using:
 git clone https://github.com/DevAhmadz/AI-support-Chatbot.git
 cd AI-support-Chatbot
 pip install -r requirements.txt
-echo "OPENAI_API_KEY=sk-..." > .env
 streamlit run app.py
+
